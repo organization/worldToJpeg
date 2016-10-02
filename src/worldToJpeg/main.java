@@ -18,7 +18,6 @@ public class main extends PluginBase implements Listener {
 
 	@Override
 	public void onEnable() {
-
 		this.getServer().getPluginManager().registerEvents(this, this);
 		this.getDataFolder().mkdirs();
 		this.getServer().getScheduler().scheduleAsyncTask(new AsyncTask() {
@@ -30,6 +29,9 @@ public class main extends PluginBase implements Listener {
 					image = new BufferedImage(600, 600, BufferedImage.TYPE_INT_RGB);
 					Graphics2D graphics = image.createGraphics();
 					Position spawn = getServer().getDefaultLevel().getSafeSpawn();
+					/**
+					*스폰위치 반경으로 x,z좌표를 ±300 만큼 graphics인스턴스에 넣어줍니다
+					*/
 					for (int x = 0; x < 600; x++) {
 						for (int y = 0; y < 600; y++) {
 							graphics.setColor(getServer().getDefaultLevel().getMapColorAt(spawn.getFloorX() - 300 + x,
