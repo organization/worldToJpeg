@@ -37,6 +37,10 @@ public class main extends PluginBase implements Listener {
 							graphics.fillRect(x, y, x, y);
 						}
 					}
+					/**
+					 * 플레이어를 인식하면 해당 플레이어의 위치와 그 닉네임을 추가로 이미지에 반영합니다
+					 * 해당 기능을 원치않을경우 작성하지 않으시면 됩니다
+					 */
 					for (Player player : getServer().getOnlinePlayers().values()) {
 						int x = player.getPosition().getFloorX();
 						int y = player.getPosition().getFloorZ();
