@@ -1,2 +1,2 @@
-# worldToPng
+# worldToJpeg
 마인크래프트맵을 간단한 소스를 통해 이미지처리합니다
