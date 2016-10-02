@@ -50,10 +50,7 @@ public class main extends PluginBase implements Listener {
 								|| y <= spawn1.getFloorZ() + 300 && y >= spawn1.getFloorZ() - 300) {
 
 							graphics.setColor(Color.RED);
-							graphics.fillRect((spawn.getFloorX() - x) + 299, (spawn.getFloorZ() - y) + 299,
-									// (spawn.getFloorX() - x) + 300,
-									// (spawn.getFloorZ() - y) + 300
-									2, 2);
+							graphics.fillRect((spawn.getFloorX() - x) + 299, (spawn.getFloorZ() - y) + 299, 2, 2);
 							graphics.setColor(Color.BLACK);
 							graphics.drawString(player.getName(), (spawn.getFloorX() - x) + 300,
 									(spawn.getFloorZ() - y) + 296);
