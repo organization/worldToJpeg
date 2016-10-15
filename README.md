@@ -7,8 +7,8 @@ try {
 	image = new BufferedImage(600, 600, BufferedImage.TYPE_INT_RGB);
 	Graphics2D graphics = image.createGraphics();
 	Position spawn = getServer().getDefaultLevel().getSafeSpawn();
-	for (int x = 0; x < 600; x++) {
-		for (int y = 0; y < 600; y++) {
+	for (int x = 0; x != 600; x++) {
+		for (int y = 0; y != 600; y++) {
 			graphics.setColor(getServer().getDefaultLevel().getMapColorAt(spawn.getFloorX() - 300 + x,
 					spawn.getFloorZ() - 300 + y));
 			graphics.fillRect(x, y, x, y);
